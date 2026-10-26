@@ -1,0 +1,105 @@
+Third-party notices for VidEdit3D
+=================================
+
+VidEdit3D includes or adapts portions of the following projects. Their
+copyright notices and license terms remain in effect for those portions.
+
+GaussCtrl
+  Copyright (c) 2024, Active Vision Laboratory.
+  BSD 3-Clause License.
+  https://github.com/ActiveVisionLab/gaussctrl
+  License: LICENSES/GaussCtrl-BSD-3-Clause.txt
+  Portions of the VidEdit3D data, model, pipeline, trainer, camera-path,
+  attention, segmentation, spatiotemporal, and inverse-projection code derive
+  from or were developed from the GaussCtrl codebase.
+
+Nerfstudio
+  Copyright 2022 the Regents of the University of California, Nerfstudio Team
+  and contributors.
+  Apache License 2.0.
+  https://github.com/nerfstudio-project/nerfstudio
+  License: nerfstudio/LICENSE
+  VidEdit3D retains a modified Nerfstudio source dependency used for training
+  and camera handling, including upstream rendering and viewer support modules.
+
+Nerfstudio-derived third-party portions
+  PyTorch default_collate: Copyright (c) 2016- Facebook, Inc (Adam Paszke),
+  BSD 3-Clause; license: nerfstudio/LICENSES/PyTorch-BSD-3-Clause.txt.
+  torch-ngp: Copyright (c) 2022 hawkey, MIT;
+  license: nerfstudio/LICENSES/torch-ngp-MIT.txt.
+  MonoSDF: Copyright (c) 2022 autonomousvision, MIT;
+  license: nerfstudio/LICENSES/MonoSDF-MIT.txt.
+  TensoRF: Copyright 2022 Anpei Chen, MIT;
+  license: nerfstudio/LICENSES/TensoRF-MIT.txt.
+  NeRF-Factory: Copyright (c) 2022 POSTECH, KAIST, Kakao Brain Corp.,
+  Apache License 2.0. Portions are retained in
+  nerfstudio/nerfstudio/model_components/losses.py and covered by
+  nerfstudio/LICENSE.
+  nerf_pl: Copyright (c) 2020 Quei-An Chen, MIT;
+  license: nerfstudio/LICENSES/nerf-pl-MIT.txt.
+  nerf-pytorch: Copyright (c) 2020 bmild, MIT;
+  license: nerfstudio/LICENSES/nerf-pytorch-MIT.txt.
+  MultiNeRF: Copyright 2022 Google LLC, Apache License 2.0. Its camera,
+  geometry, and loss portions are covered by nerfstudio/LICENSE.
+  COLMAP Python model reader: Copyright (c) 2022, ETH Zurich and UNC Chapel
+  Hill, BSD 3-Clause. Its complete notice is retained in
+  nerfstudio/nerfstudio/data/utils/colmap_parsing_utils.py.
+
+gsplat
+  Copyright the gsplat contributors.
+  Apache License 2.0.
+  https://github.com/nerfstudio-project/gsplat
+  License: nerfstudio/gsplat/LICENSE
+  The inverse-projection implementation contains portions adapted from gsplat.
+  Its pure-PyTorch spherical-harmonics implementation includes portions from
+  svox2/Plenoxels under BSD 2-Clause; license:
+  nerfstudio/gsplat/LICENSES/svox2-BSD-2-Clause.txt.
+  GLM is Copyright (c) 2005 - G-Truc Creation under the MIT License;
+  license: nerfstudio/gsplat/LICENSES/GLM-MIT.txt. The original dual-license
+  notice is also retained at
+  nerfstudio/gsplat/gsplat/cuda/csrc/third_party/glm/copying.txt.
+
+Diffusers and Wan
+  Copyright 2025 The Wan Team and The HuggingFace Team.
+  Apache License 2.0.
+  https://github.com/huggingface/diffusers
+  VidEdit3D's FAVE pipeline and Wan attention processor adapt the official Wan
+  pipeline/processor. Diffusers itself is an external pinned dependency and is
+  not vendored in this repository.
+
+MasaCtrl
+  Copyright the TencentARC/MasaCtrl contributors.
+  Apache License 2.0.
+  https://github.com/TencentARC/MasaCtrl
+  Portions of videdit3d/wan_attention.py adapt MasaCtrl attention-control code.
+
+Language Segment-Anything, Grounded-Segment-Anything, and GroundingDINO
+  Language Segment-Anything: Copyright its contributors.
+  https://github.com/luca-medeiros/lang-segment-anything
+  Grounded-Segment-Anything: Copyright 2020-present, IDEA, Inc.
+  GroundingDINO: Copyright IDEA-Research and its contributors.
+  Apache License 2.0.
+  https://github.com/IDEA-Research/Grounded-Segment-Anything
+  https://github.com/IDEA-Research/GroundingDINO
+  Portions of videdit3d/lang_sam.py adapt Language Segment-Anything and
+  Grounded-Segment-Anything. The
+  retained GroundingDINO fork keeps its complete license and notice at
+  groundingdino-cu128/LICENSE and groundingdino-cu128/NOTICE.
+
+GroundingDINO-derived third-party portions
+  torchvision: Copyright (c) Soumith Chintala and contributors, BSD 3-Clause;
+  license: groundingdino-cu128/LICENSES/torchvision-BSD-3-Clause.txt.
+  PyTorch CUDAHooks: Copyright the PyTorch contributors, BSD 3-Clause;
+  portions are retained in groundingdino-cu128/groundingdino/models/
+  GroundingDINO/csrc/vision.cpp; license:
+  groundingdino-cu128/LICENSES/PyTorch-BSD-3-Clause.txt.
+  MMCV/OpenMMLab: Copyright (c) OpenMMLab, Apache License 2.0. Config, file-I/O,
+  and registry portions are covered by groundingdino-cu128/LICENSE.
+  Swin Transformer: Copyright (c) Microsoft Corporation, MIT;
+  license: groundingdino-cu128/LICENSES/Swin-Transformer-MIT.txt.
+  Microsoft Deformable ConvNets: Copyright (c) 2017 Microsoft, MIT;
+  license: groundingdino-cu128/LICENSES/Deformable-ConvNets-MIT.txt.
+
+External Python packages and downloaded model assets are not relicensed by
+VidEdit3D. They remain governed by their respective upstream licenses and model
+terms.
